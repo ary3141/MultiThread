@@ -1,6 +1,6 @@
-import socket  # Buat urusan jaringan
-import os  # Buat urusan file
-import time  # Buat jeda waktu
+import socket 
+import os 
+import time  
 
 def handle_request(client_socket):  # Fungsi buat ngurusin permintaan dari klien
     request = client_socket.recv(1024).decode('utf-8')  # Baca data dari klien sampai 1024 byte, terus ubah jadi string
